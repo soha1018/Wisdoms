@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+        android:background="#a000"
+        android:src="@mipmap/image_demo"
+        android:layout_marginRight="10dp"
+        android:layout_width="120dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:textColor="#000"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:text="@string/app_name"
+        android:layout_toRightOf="@+id/iv_image"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_title"
+        android:ellipsize="end"
+        android:textSize="20sp"
+        android:text="2017年5月17日19:46:02"
+        android:layout_toRightOf="@+id/iv_image"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
